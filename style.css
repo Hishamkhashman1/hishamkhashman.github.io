@@ -68,9 +68,12 @@ h1 {
 }
 
 .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
   width: 100%;
-  padding: 0.95rem 1rem;
+  padding: 0.95rem 1.1rem;
   border-radius: 999px;
   background: #111;
   color: #fff;
@@ -84,6 +87,29 @@ h1 {
   transform: translateY(-2px);
   background: #d6823a;
   box-shadow: 0 12px 25px rgba(214, 130, 58, 0.35);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.label {
+  flex: 1;
+  text-align: center;
 }
 
 .cta-note {
